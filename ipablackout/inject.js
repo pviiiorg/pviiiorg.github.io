@@ -7,25 +7,32 @@
 	var i = container.appendChild(document.createElement('iframe'));
 	var s = document.getElementsByTagName('script');
 	var page = getOp('page') || 'v2.html';
-	var height = getOp('height') || '100%';
+	var height = getOp('height') || '100vh';
+	var exitable = getOp('exitable');
 
-	if (getOp('exitable')) {
-		var closeButton = container.appendChild(document.createElement('button'));
+	if (exitable) {
+		var closeButton = container.insertBefore(
+			document.createElement('button'),
+			container.firstChild
+		);
 		closeButton.style = '\
-			padding: 10px;\
-			font-size: 20px;\
-			line-height: 1em;\
+			padding: 4px;\
+			font-size: 13px;\
+			line-height: 15px;\
 			background: black;\
-			color: white;\
-			border: 2px solid white;\
-			font-size: 1.3em;\
+			color: #CCC;\
+			width:100%;\
 			cursor: pointer;\
-			position: fixed;\
-			top: 1em; right: 1em;\
-			border-radius: 3px;\
+			border: none;\
+			text-align: right;\
+			background: repeating-linear-gradient(45deg,#000,#000 10px,#222 10px,#222 20px);\
 		';
-		closeButton.innerHTML = 'close banner';
-		closeButton.onclick = function() {
+		closeButton.innerHTML = 'close banner [x]';
+		var closeButtonBase = container.appendChild(closeButton.cloneNode(true));
+		closeButtonBase.style.position = 'absolute';
+		closeButtonBase.style.bottom = '0';
+		closeButtonBase.style.left = '0';
+		closeButton.onclick = closeButtonBase.onclick = function() {
 			container.parentNode.removeChild(container);
 		};
 	}
@@ -39,11 +46,13 @@
 	i.setAttribute('frameborder', '0');
 
 	container.style = '\
+		position: relative;\
 		height: 100vh;\
 		width: 100%;\
 	';
 
-	i.style = 'width:100%;height:100%;border:none;';
+	i.style = 'width:100%;border:none;';
+	i.style.height = exitable ? 'calc(100% - 30px)' : '100%';
 	i.src = 'https://pviii.org/ipablackout/pages/' + page;
-	i.style.height = height;
+	container.style.height = height;
 }());

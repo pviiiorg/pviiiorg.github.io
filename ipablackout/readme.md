@@ -27,7 +27,7 @@ Place this in your website (it can go in the HEAD or the BODY; it doesn't matter
 
 * Use `data-page` (default: 'v2.html') to configure the page you wish to show (any HTML file in `pages/`)
 * Use `data-height` (default: `100vh`) to set the CSS height (default is the full height of the window)
-* Use `data-exitable` (default: false) to add a 'close banner' button to the top-right of the page
+* Use `data-exitable` (default: false) to add a 'close banner' button to the top and bottom of the banner
 
 E.g.
 
