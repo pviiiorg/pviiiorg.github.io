@@ -1,4 +1,4 @@
-# Embed a #BlackoutUK banner
+# #BlackoutUK Resources
 
 *Welcome! This directory ('2016-ip-act-blackout') can receive PRs for any content related to BlackoutUK --
 this content will be available on https://pviii.org/2016-ip-act-blackout (which sits behind CloudFlare).*
