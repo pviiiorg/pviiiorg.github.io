@@ -1,5 +1,7 @@
 # #BlackoutUK Resources
 
+Background: BlackoutUK is an attempt to bring awareness to the new Investigatory Powers Act, and to educate the public about its ramifications.
+
 *Welcome! This directory ('2016-ip-act-blackout') can receive PRs for any content related to BlackoutUK --
 this content will be available on https://pviii.org/ipablackout (which sits behind CloudFlare).*
 
