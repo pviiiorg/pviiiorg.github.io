@@ -5,11 +5,17 @@ this content will be available on https://pviii.org/ipablackout (which sits behi
 
 ## Embeddable full-page notice/iframe
 
-Place this in your website, ideally directly above the closing `</body>` tag.
+The `pages/` directory contains a number of HTML files that you can embed into your existing website. Using the injection script, these will be displayed atop your page's content, so the user can scroll past the banner when finished reading.
+
+### Injection
+
+Place this in your website (it can go in the HEAD or the BODY; it doesn't matter):
 
 ```html
 <script src="https://pviii.org/ipablackout/inject.js"></script>
 ```
+
+#### (Optional) Options:
 
 * Use `data-page` (default: 'full.html') to configure the page you wish to show (any HTML file in `pages/`)
 * Use `data-height` (default: `100vh`) to set the CSS height (default is the full height of the window)
