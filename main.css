@@ -1,0 +1,22 @@
+body {
+	padding: 2em;
+	font: 1em helvetica, arial, sans-serif;
+	background: #111;
+	color: white;
+	line-height: 1.4em;
+}
+
+h1 {
+	font-size: 1.4em;
+	margin: 0 0 1em;
+	padding: 0 0 1em;
+	border-bottom: 2px solid #444;
+}
+
+a {
+	color: white;
+	font-weight: 700;
+}
+
+a:visited { color: #eee; }
+a:hover, a:focus, a:active { background: #444; }
