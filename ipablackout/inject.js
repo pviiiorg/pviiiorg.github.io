@@ -6,7 +6,7 @@
 	);
 	var i = container.appendChild(document.createElement('iframe'));
 	var s = document.getElementsByTagName('script');
-	var page = getOp('page') || 'full.html';
+	var page = getOp('page') || 'v2.html';
 	var height = getOp('height') || '100%';
 
 	if (getOp('exitable')) {
