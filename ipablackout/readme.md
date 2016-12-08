@@ -11,8 +11,8 @@ The `pages/` directory contains a number of HTML files that you can embed into y
 
 ### Available pages/banners:
 
- * [v2.html](https://pviii.org/ipablackout/pages/v2.html)
- * [original.html](https://pviii.org/ipablackout/pages/original.html)
+ * **[v2.html](https://pviii.org/ipablackout/pages/v2.html)**
+ * **[original.html](https://pviii.org/ipablackout/pages/original.html)**
 
 ### Injection
 
