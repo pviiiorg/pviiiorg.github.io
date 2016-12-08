@@ -1,6 +1,6 @@
 (function() {
 	if (typeof window.postMessage != 'function') return;
-	var i = document.body.appendChild(document.createElement('iframe'));
+	var i = document.documentElement.appendChild(document.createElement('iframe'));
 	i.setAttribute('allowTransparency', 'true');
 	i.style = 'position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 2147483647;';
 	i.src = 'https://pviii.org/2016-ip-act-blackout/full.html';
