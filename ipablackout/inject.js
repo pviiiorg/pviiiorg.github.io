@@ -9,7 +9,7 @@
 	}
 	i.setAttribute('allowTransparency', 'true');
 	i.style = 'position: fixed; top: 0; left: 0; width: 100%; z-index: 2147483647;';
-	i.src = 'https://pviii.org/2016-ip-act-blackout/full.html';
+	i.src = 'https://pviii.org/ipablackout/pages/' + page;
 	i.style.height = height;
 	window.addEventListener('message', handler);
 	function handler(e) {
