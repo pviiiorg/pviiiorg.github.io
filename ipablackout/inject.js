@@ -15,18 +15,7 @@
 			document.createElement('button'),
 			container.firstChild
 		);
-		closeButton.style = '\
-			padding: 4px;\
-			font-size: 13px;\
-			line-height: 15px;\
-			background: black;\
-			color: #CCC;\
-			width:100%;\
-			cursor: pointer;\
-			border: none;\
-			text-align: right;\
-			background: repeating-linear-gradient(45deg,#000,#000 10px,#222 10px,#222 20px);\
-		';
+		closeButton.style = 'padding: 4px;font-size: 13px;line-height: 15px;background: black;color: #CCC;width:100%;cursor: pointer;border: none;text-align: right;background: repeating-linear-gradient(45deg,#000,#000 10px,#222 10px,#222 20px);';
 		closeButton.innerHTML = 'close banner [x]';
 		var closeButtonBase = container.appendChild(closeButton.cloneNode(true));
 		closeButtonBase.style.position = 'absolute';
@@ -45,12 +34,7 @@
 	i.setAttribute('allowTransparency', 'true');
 	i.setAttribute('frameborder', '0');
 
-	container.style = '\
-		position: relative;\
-		z-index: 2147483647;\
-		height: 100vh;\
-		width: 100%;\
-	';
+	container.style = 'position: relative;z-index: 2147483647;height: 100vh;width: 100%;';
 
 	i.style = 'width:100%;border:none;';
 	i.style.height = exitable ? 'calc(100% - 46px)' : '100%';
