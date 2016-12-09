@@ -47,6 +47,7 @@
 
 	container.style = '\
 		position: relative;\
+		z-index: 2147483647;\
 		height: 100vh;\
 		width: 100%;\
 	';
