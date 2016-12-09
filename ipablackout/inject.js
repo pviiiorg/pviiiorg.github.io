@@ -53,7 +53,7 @@
 	';
 
 	i.style = 'width:100%;border:none;';
-	i.style.height = exitable ? 'calc(100% - 30px)' : '100%';
+	i.style.height = exitable ? 'calc(100% - 46px)' : '100%';
 	i.src = 'https://pviii.org/ipablackout/pages/' + page;
 	container.style.height = height;
 }());
