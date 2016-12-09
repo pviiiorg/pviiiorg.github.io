@@ -34,7 +34,7 @@ E.g.
 ```html
 <script
 	src="https://pviii.org/ipablackout/inject.js"
-	data-page="original.html"
+	data-page="whyprivacymatters.html"
 	data-exitable
-	data-height="50%"></script>
+	data-height="50vh"></script>
 ```
